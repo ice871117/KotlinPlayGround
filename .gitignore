@@ -1,0 +1,15 @@
+bin
+gen
+out
+*.iml
+.settings
+.project
+local.properties
+release
+.DS_Store
+*Thumbs.db
+*.jar.properties
+xgbuild/
+.gradle/
+.idea/
+.navigation/
