@@ -11,6 +11,28 @@ class RunLetWithAlsoApply {
                 sum
             }
             println("$sumOf1to10")
+
+            var nullable: Int? = null
+            nullable?.let {
+                println("Counld not be run $it")
+            }
+
+            val list = MutableList(2) { 0 }.apply {
+                add(3)
+                add(4)
+                add(5)
+            }
+//            val list = MutableList(5, {0}).also {
+//                it.add(3)
+//                it.add(4)
+//                it.add(5)
+//            }
+            list.forEach {
+                print("$it ")
+            }
+
+            println()
+            print(with("abc") { toUpperCase() })
         }
     }
 }
